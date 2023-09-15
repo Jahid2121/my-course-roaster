@@ -5,6 +5,7 @@ import Courses from './Components/Courses/Courses'
 
 function App() {
 
+
   return (
     <div className=' flex'>
     <Courses />
