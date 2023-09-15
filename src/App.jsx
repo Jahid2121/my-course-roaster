@@ -16,14 +16,14 @@ const handleSelectButton = course => {
     return alert('Please select one at a time')
   }
   else{
-    const newSelectedCourse = [...selectedCourses, course]
-    setSelectedCourses(newSelectedCourse)
     selectedCourses.forEach(item => {
       count = count + item.credit_hours
-      setTotalCredit(count)
     })
+    setTotalCredit(count)
     const remaining = 20 - count
     setCreditRemaining(remaining);
+    const newSelectedCourse = [...selectedCourses, course]
+    setSelectedCourses(newSelectedCourse)
 
   }
 }
