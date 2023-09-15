@@ -1,21 +1,26 @@
 import PropTypes from 'prop-types';
 
-const SingleCourse = props => {
+const SingleCourse = ({course}) => {
+    const {image, course_name, course_details, price, credit_hours} = course
     return (
-        <div>
+        <>
             <div className="card bg-base-100 shadow-xl">
   <figure className="px-10 pt-10">
-    <img src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" className="rounded-xl" />
+    <img src={image} alt={`${course_name}`} className=" w-full" />
   </figure>
   <div className="card-body items-center text-center">
-    <h2 className="card-title">Shoes!</h2>
-    <p>If a dog chews shoes whose shoes does he choose?</p>
+    <h2 className="card-title">{course_name}</h2>
+    <p>{course_details}</p>
+    <div className=' flex gap-2'>
+        <p>Price : {price}</p>
+        <p>Credit : {credit_hours}</p>
+    </div>
     <div className="card-actions">
-      <button className="btn btn-primary">Buy Now</button>
+      <button className="btn text-white bg-[#2F80ED]">Select</button>
     </div>
   </div>
 </div>
-        </div>
+        </>
     );
 };
 

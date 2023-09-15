@@ -14,7 +14,9 @@ const Courses = () => {
     return (
         <>
         <div className=' w-3/4 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1'>
-            <SingleCourse />
+        {
+            courses.map(course => <SingleCourse key={course.id} course={course}/> )
+        }
             
         </div>
         

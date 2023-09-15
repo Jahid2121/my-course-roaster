@@ -1,66 +1,74 @@
 [
-    {
-      "course_name": "Problem-Solving Part",
-      "course_details": "Learn problem-solving techniques and strategies to tackle complex challenges.",
-      "price": 49.99,
-      "credit_hours": 3,
-      "image": "https://i.ibb.co/BrRD9WH/Rectangle-2-6.png"
-    },
-    {
-      "course_name": "Software Engineering",
-      "course_details": "Explore software engineering principles, including software development methodologies.",
-      "price": 79.99,
-      "credit_hours": 4,
-      "image": "https://i.ibb.co/4p6NJBR/Rectangle-2-5.png"
-    },
-    {
-      "course_name": "Introduction to C++ for DSA",
-      "course_details": "Get started with C++ programming and its applications in data structure and algorithms.",
-      "price": 59.99,
-      "credit_hours": 3.5,
-      "image": "https://i.ibb.co/n1LMJj9/Rectangle-2-4.png"
-    },
-    {
-      "course_name": "Introduction to Algorithms",
-      "course_details": "Learn the fundamental algorithms and data structures used in computer science.",
-      "price": 69.99,
-      "credit_hours": 4,
-      "image": "https://i.ibb.co/TtmyHtH/Rectangle-2-3.png"
-    },
-    {
-      "course_name": "Introduction to C Programming",
-      "course_details": "Begin your journey in programming with the C programming language.",
-      "price": 39.99,
-      "credit_hours": 2.5,
-      "image": "https://i.ibb.co/44P1dwY/Rectangle-2-2.png"
-    },
-    {
-      "course_name": "Database (MySQL)",
-      "course_details": "Explore the world of databases with a focus on MySQL and database management.",
-      "price": 89.99,
-      "credit_hours": 5,
-      "image": "https://i.ibb.co/61gQBK2/Rectangle-2-1.png"
-    },
-    {
-      "course_name": "Basic Data Structuress",
-      "course_details": "Learn the fundamental data structures used in computer science.",
-      "price": 49.99,
-      "credit_hours": 3.5,
-      "image": "https://i.ibb.co/PcPb93d/Rectangle-3.png"
-    },
-    {
-      "course_name": "AWS, Cloud Computing",
-      "course_details": "Master Amazon Web Services (AWS) and cloud computing principles.",
-      "price": 59.99,
-      "credit_hours": 3,
-      "image": "https://i.ibb.co/YpRK8rh/Rectangle-3-1.png"
-    },
-    {
-      "course_name": "Introduction to OOP Python",
-      "course_details": "Explore object-oriented programming (OOP) using the Python programming language.",
-      "price": 69.99,
-      "credit_hours": 4.5,
-      "image": "https://i.ibb.co/nBVWCjg/Rectangle-2.png"
-    }
-  ]
-  
+  {
+    "id": 1,
+    "course_name": "Problem-Solving Part",
+    "course_details": "Learn problem-solving techniques and strategies to tackle complex challenges.",
+    "price": 49.99,
+    "credit_hours": 3,
+    "image": "https://i.ibb.co/BrRD9WH/Rectangle-2-6.png"
+  },
+  {
+    "id": 2,
+    "course_name": "Software Engineering",
+    "course_details": "Explore software engineering principles, including software development methodologies.",
+    "price": 79.99,
+    "credit_hours": 4,
+    "image": "https://i.ibb.co/4p6NJBR/Rectangle-2-5.png"
+  },
+  {
+    "id": 3,
+    "course_name": "Introduction to C++ for DSA",
+    "course_details": "Get started with C++ programming and its applications in data structure and algorithms.",
+    "price": 59.99,
+    "credit_hours": 3.5,
+    "image": "https://i.ibb.co/n1LMJj9/Rectangle-2-4.png"
+  },
+  {
+    "id": 4,
+    "course_name": "Introduction to Algorithms",
+    "course_details": "Learn the fundamental algorithms and data structures used in computer science.",
+    "price": 69.99,
+    "credit_hours": 4,
+    "image": "https://i.ibb.co/TtmyHtH/Rectangle-2-3.png"
+  },
+  {
+    "id": 5,
+    "course_name": "Introduction to C Programming",
+    "course_details": "Begin your journey in programming with the C programming language.",
+    "price": 39.99,
+    "credit_hours": 2.5,
+    "image": "https://i.ibb.co/44P1dwY/Rectangle-2-2.png"
+  },
+  {
+    "id": 6,
+    "course_name": "Database (MySQL)",
+    "course_details": "Explore the world of databases with a focus on MySQL and database management.",
+    "price": 89.99,
+    "credit_hours": 5,
+    "image": "https://i.ibb.co/61gQBK2/Rectangle-2-1.png"
+  },
+  {
+    "id": 7,
+    "course_name": "Basic Data Structures",
+    "course_details": "Learn the fundamental data structures used in computer science.",
+    "price": 49.99,
+    "credit_hours": 3.5,
+    "image": "https://i.ibb.co/PcPb93d/Rectangle-3.png"
+  },
+  {
+    "id": 8,
+    "course_name": "AWS, Cloud Computing",
+    "course_details": "Master Amazon Web Services (AWS) and cloud computing principles.",
+    "price": 59.99,
+    "credit_hours": 3,
+    "image": "https://i.ibb.co/YpRK8rh/Rectangle-3-1.png"
+  },
+  {
+    "id": 9,
+    "course_name": "Introduction to OOP Python",
+    "course_details": "Explore object-oriented programming (OOP) using the Python programming language.",
+    "price": 69.99,
+    "credit_hours": 4.5,
+    "image": "https://i.ibb.co/nBVWCjg/Rectangle-2.png"
+  }
+]
