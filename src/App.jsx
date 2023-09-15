@@ -8,8 +8,15 @@ function App() {
   const [selectedCourses, setSelectedCourses] = useState([])
 
 const handleSelectButton = course => {
-  const newSelectedCourse = [...selectedCourses, course]
-  setSelectedCourses(newSelectedCourse)
+  const isSelected = selectedCourses.find(item => item.id === course.id)
+
+  if(isSelected){
+    return alert('Please select one at a time')
+  }
+  else{
+    const newSelectedCourse = [...selectedCourses, course]
+    setSelectedCourses(newSelectedCourse)
+  }
 }
   return (
     <div className=' flex'>
