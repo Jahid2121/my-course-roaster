@@ -6,7 +6,8 @@ import Courses from './Components/Courses/Courses'
 
 function App() {
   const [selectedCourses, setSelectedCourses] = useState([])
-  const [totalCredit, setTotalCredit] = useState()
+  const [totalCredit, setTotalCredit] = useState(0)
+  const [creditRemaining, setCreditRemaining] = useState(20)
 
 const handleSelectButton = course => {
   const isSelected = selectedCourses.find(item => item.id === course.id)
@@ -21,14 +22,15 @@ const handleSelectButton = course => {
       count = count + item.credit_hours
       setTotalCredit(count)
     })
-    
+    const remaining = 20 - count
+    setCreditRemaining(remaining);
 
   }
 }
   return (
     <div className=' flex'>
     <Courses handleSelectButton={handleSelectButton}/>
-    <Cart selectedCourses={selectedCourses} totalCredit={totalCredit}/>
+    <Cart creditRemaining={creditRemaining} selectedCourses={selectedCourses} totalCredit={totalCredit}/>
       
     </div>
   )
