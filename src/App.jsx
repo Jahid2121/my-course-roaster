@@ -5,16 +5,16 @@ import Cart from './Components/Cart/Cart'
 import Courses from './Components/Courses/Courses'
 
 function App() {
-  const [selectedCourse, setSelectedCourse] = useState([])
+  const [selectedCourses, setSelectedCourses] = useState([])
 
 const handleSelectButton = course => {
-  const newSelectedCourse = [...selectedCourse, course]
-  setSelectedCourse(newSelectedCourse)
+  const newSelectedCourse = [...selectedCourses, course]
+  setSelectedCourses(newSelectedCourse)
 }
   return (
     <div className=' flex'>
     <Courses handleSelectButton={handleSelectButton}/>
-    <Cart selectedCourse={selectedCourse}/>
+    <Cart selectedCourses={selectedCourses}/>
       
     </div>
   )
