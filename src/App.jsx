@@ -39,7 +39,7 @@ const handleSelectButton = course => {
   }
 }
   return (
-    <div className=' flex'>
+    <div className='flex'>
           <Toaster />
     <Courses handleSelectButton={handleSelectButton}/>
     <Cart creditRemaining={creditRemaining} selectedCourses={selectedCourses} totalCredit={totalCredit}/>
