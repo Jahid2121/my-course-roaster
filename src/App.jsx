@@ -19,9 +19,16 @@ const handleSelectButton = course => {
     selectedCourses.forEach(item => {
       count = count + item.credit_hours
     })
-    setTotalCredit(count)
     const remaining = 20 - count
-    setCreditRemaining(remaining);
+
+    if(remaining < 0){
+      return alert('insufficient credit hours')
+    }
+    else{
+      setCreditRemaining(remaining);
+      setTotalCredit(count)
+
+    }
     const newSelectedCourse = [...selectedCourses, course]
     setSelectedCourses(newSelectedCourse)
 
