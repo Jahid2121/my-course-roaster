@@ -4,19 +4,19 @@ const SingleCourse = ({course, handleSelectButton}) => {
     const {image, course_name, course_details, price, credit_hours} = course
     return (
         <>
-            <div className="card bg-base-100 shadow-xl">
-  <figure className="px-10 pt-10">
+            <div className="bg-base-100 shadow-xl max-w-[290px] gap-3">
+
     <img src={image} alt={`${course_name}`} className=" w-full" />
-  </figure>
-  <div className="card-body items-center text-center">
-    <h2 className="card-title">{course_name}</h2>
-    <p>{course_details}</p>
-    <div className=' flex gap-2'>
-        <p>Price : {price}</p>
+
+  <div className="">
+    <h2 className="text-[18px] font-semibold">{course_name}</h2>
+    <p className='text-[13px] font-normal'>{course_details}</p>
+    <div className='flex gap-3 mt-3 mb-3'>
+        <p>Price :  {price}</p>
         <p>Credit : {credit_hours}</p>
     </div>
-    <div className="card-actions">
-      <button className="btn text-white bg-[#2F80ED]" onClick={() => handleSelectButton(course)}>Select</button>
+    <div>
+      <button className="btn w-full font-semibold text-white bg-[#2F80ED]" onClick={() => handleSelectButton(course)}>Select</button>
     </div>
   </div>
 </div>

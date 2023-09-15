@@ -13,7 +13,7 @@ const Courses = ({handleSelectButton}) => {
     },[])
     return (
         <>
-        <div className=' w-3/4 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1'>
+        <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-3 ml-3'>
         {
             courses.map(course => <SingleCourse key={course.id} handleSelectButton={handleSelectButton} course={course}/> )
         }
@@ -25,6 +25,7 @@ const Courses = ({handleSelectButton}) => {
 };
 
 Courses.propTypes = {
+    
     
 };
 

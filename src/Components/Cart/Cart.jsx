@@ -2,13 +2,13 @@ import PropTypes from 'prop-types';
 
 const Cart = ({selectedCourses, totalCredit, creditRemaining}) => {
     return (
-        <div className="w-96 h-[300px] bg-base-100 shadow-xl ml-4 p-8">
-            <h4 className=' text-xl text-blue-500 font-bold'>Credit Hour remaining {creditRemaining} hr </h4>
+        <div className="rounded-xl h-[300px] bg-base-100 shadow-xl p-2">
+            <h4 className=' text-sm text-blue-500 font-bold'>Credit Hour remaining {creditRemaining} hr </h4>
             <hr />
             <h2 className=' text-lg font-bold'>Course Name</h2>
-            <ol>
+            <ol className='list-decimal px-5'>
   {selectedCourses.map((course) => (
-    <li key={course.id}>{course.course_name}</li>
+    <li className='font-normal' key={course.id}>{course.course_name}</li>
   ))}
 </ol>
     <hr />
