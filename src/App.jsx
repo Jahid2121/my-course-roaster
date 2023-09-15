@@ -3,6 +3,8 @@ import { useState } from 'react'
 import './App.css'
 import Cart from './Components/Cart/Cart'
 import Courses from './Components/Courses/Courses'
+import toast, { Toaster } from 'react-hot-toast'
+
 
 function App() {
   const [selectedCourses, setSelectedCourses] = useState([])
@@ -13,7 +15,8 @@ const handleSelectButton = course => {
   const isSelected = selectedCourses.find(item => item.id === course.id)
   let count =  course.credit_hours
   if(isSelected){
-    return alert('Please select one at a time')
+    toast.error("You have already selected this course.")
+    return;
   }
   else{
     selectedCourses.forEach(item => {
@@ -22,7 +25,8 @@ const handleSelectButton = course => {
     const remaining = 20 - count
 
     if(remaining < 0){
-      return alert('insufficient credit hours')
+      toast.error('You cannot select this course due to credit hour limits has been exceeded')
+      return;
     }
     else{
       setCreditRemaining(remaining);
@@ -36,6 +40,7 @@ const handleSelectButton = course => {
 }
   return (
     <div className=' flex'>
+          <Toaster />
     <Courses handleSelectButton={handleSelectButton}/>
     <Cart creditRemaining={creditRemaining} selectedCourses={selectedCourses} totalCredit={totalCredit}/>
       
