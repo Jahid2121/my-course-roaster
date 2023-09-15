@@ -3,7 +3,7 @@ import SingleCourse from '../SingleCourse/SingleCourse';
 import { useEffect, useState } from 'react';
 
 
-const Courses = () => {
+const Courses = ({handleSelectButton}) => {
     const [courses, setCourses] = useState([])
 
     useEffect(()=> {
@@ -15,7 +15,7 @@ const Courses = () => {
         <>
         <div className=' w-3/4 grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1'>
         {
-            courses.map(course => <SingleCourse key={course.id} course={course}/> )
+            courses.map(course => <SingleCourse key={course.id} handleSelectButton={handleSelectButton} course={course}/> )
         }
             
         </div>

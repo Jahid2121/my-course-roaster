@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 
-const SingleCourse = ({course}) => {
+const SingleCourse = ({course, handleSelectButton}) => {
+    console.log(course);
     const {image, course_name, course_details, price, credit_hours} = course
     return (
         <>
@@ -16,7 +17,7 @@ const SingleCourse = ({course}) => {
         <p>Credit : {credit_hours}</p>
     </div>
     <div className="card-actions">
-      <button className="btn text-white bg-[#2F80ED]">Select</button>
+      <button className="btn text-white bg-[#2F80ED]" onClick={() => handleSelectButton(course)}>Select</button>
     </div>
   </div>
 </div>

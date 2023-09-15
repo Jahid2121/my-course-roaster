@@ -5,10 +5,13 @@ import Courses from './Components/Courses/Courses'
 
 function App() {
 
+const handleSelectButton = course => {
+  console.log('selectButton', course);
+}
 
   return (
     <div className=' flex'>
-    <Courses />
+    <Courses handleSelectButton={handleSelectButton}/>
     <Cart />
       
     </div>
