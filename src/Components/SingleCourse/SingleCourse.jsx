@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types';
 
 const SingleCourse = ({course, handleSelectButton}) => {
-    console.log(course);
     const {image, course_name, course_details, price, credit_hours} = course
     return (
         <>
