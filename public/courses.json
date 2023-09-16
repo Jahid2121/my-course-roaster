@@ -25,7 +25,7 @@
   },
   {
     "id": 4,
-    "course_name": "Introduction to Algorithms",
+    "course_name": "Intro to Algorithms",
     "course_details": "Learn the fundamental algorithms and data structures used in CSE.",
     "price": 69.99,
     "credit_hours": 4,
@@ -65,7 +65,7 @@
   },
   {
     "id": 9,
-    "course_name": "Introduction to OOP Python",
+    "course_name": "Intro to OOP Python",
     "course_details": "Explore object-oriented programming (OOP) using the Python language.",
     "price": 69.99,
     "credit_hours": 4.5,
