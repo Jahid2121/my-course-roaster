@@ -39,12 +39,17 @@ const handleSelectButton = course => {
   }
 }
   return (
-    <div className='flex gap-3'>
+    <>
+    <div className='m-4 p-4'>
+      <h3 className=' text-4xl font-bold text-center'>MY Course Roaster</h3>
+    </div>
+    <div className='flex flex-col-reverse md:flex-row gap-2'>
           <Toaster />
     <Courses handleSelectButton={handleSelectButton}/>
     <Cart creditRemaining={creditRemaining} selectedCourses={selectedCourses} totalCredit={totalCredit}/>
       
     </div>
+    </>
   )
 }
 

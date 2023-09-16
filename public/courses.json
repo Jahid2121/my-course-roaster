@@ -10,7 +10,7 @@
   {
     "id": 2,
     "course_name": "Software Engineering",
-    "course_details": "Explore software engineering principles, including software development methodologies.",
+    "course_details": "Explore software engineering principles, including software development .",
     "price": 79.99,
     "credit_hours": 4,
     "image": "https://i.ibb.co/4p6NJBR/Rectangle-2-5.png"
@@ -18,7 +18,7 @@
   {
     "id": 3,
     "course_name": "Introduction to C++ for DSA",
-    "course_details": "Get started with C++ programming and its applications in data structure and algorithms.",
+    "course_details": "Get started with C++ programming and its applications in data structure.",
     "price": 59.99,
     "credit_hours": 3.5,
     "image": "https://i.ibb.co/n1LMJj9/Rectangle-2-4.png"
@@ -26,14 +26,14 @@
   {
     "id": 4,
     "course_name": "Introduction to Algorithms",
-    "course_details": "Learn the fundamental algorithms and data structures used in computer science.",
+    "course_details": "Learn the fundamental algorithms and data structures used in CSE.",
     "price": 69.99,
     "credit_hours": 4,
     "image": "https://i.ibb.co/TtmyHtH/Rectangle-2-3.png"
   },
   {
     "id": 5,
-    "course_name": "Introduction to C Programming",
+    "course_name": "Introduction to C",
     "course_details": "Begin your journey in programming with the C programming language.",
     "price": 39.99,
     "credit_hours": 2.5,
@@ -42,7 +42,7 @@
   {
     "id": 6,
     "course_name": "Database (MySQL)",
-    "course_details": "Explore the world of databases with a focus on MySQL and database management.",
+    "course_details": "Explore the world of databases with a focus on MySQL and DM.",
     "price": 89.99,
     "credit_hours": 5,
     "image": "https://i.ibb.co/61gQBK2/Rectangle-2-1.png"
@@ -66,7 +66,7 @@
   {
     "id": 9,
     "course_name": "Introduction to OOP Python",
-    "course_details": "Explore object-oriented programming (OOP) using the Python programming language.",
+    "course_details": "Explore object-oriented programming (OOP) using the Python language.",
     "price": 69.99,
     "credit_hours": 4.5,
     "image": "https://i.ibb.co/nBVWCjg/Rectangle-2.png"
