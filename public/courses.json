@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "course_name": "Introduction to C++ for DSA",
+    "course_name": "Introduction to C++",
     "course_details": "Get started with C++ programming and its applications in data structure.",
     "price": 59.99,
     "credit_hours": 3.5,
